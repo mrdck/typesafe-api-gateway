@@ -1,0 +1,31 @@
+{
+  "name": "typesafe-api-gateway",
+  "version": "1.0.0",
+  "types": "src/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint src/*"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.84",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "aws-lambda": "^1.0.6",
+    "doctoc": "^2.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-compat": "^3.13.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.3"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache",
+    "*.md": "doctoc --github --notitle"
+  }
+}
